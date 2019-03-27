@@ -1,0 +1,166 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#nom {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.container {
+  margin-top: 80px;
+}
+#erreur {
+  color: red;
+}
+#erreur1 {
+  color: red;
+}
+#erreur2 {
+  color: red;
+}
+
+h6 {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+#description {
+  font-weight: bolder;
+  font-size: 18px;
+}
+.spanprix {
+  float: right;
+}
+#image {
+  margin-left: 70px;
+}
+#boutton {
+  width: 325px;
+}
+#boutton :hover {
+  font-weight: bolder;
+}
+#icone {
+  width: 20px;
+  height: 20px;
+}
+
+#point:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+ }
+
+.tableau {
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+#ligne {
+  width: 360px;
+  height: 5;
+  background-color: blueviolet;
+}
+
+#word {
+  word-wrap: break-word;
+  width: 300px;
+}
+#entierb {
+  color: rgb(68, 125, 190);
+  font-weight: bold;
+}
+#entierc {
+  color: rgb(68, 125, 190);
+  font-weight: bold;
+}
+#indice {
+  color: rgb(65, 65, 160);
+  font-weight: bolder;
+}
+sup {
+  color: rgb(221, 24, 24);
+}
+h1 {
+  font-size: 35px;
+  color: rgb(61, 109, 106);
+  font-weight: bold;
+}
+#spanx {
+  color: rgb(61, 47, 47)
+}
+#premierdegree {
+  color: rgb(55, 127, 139);
+}
+#negatif {
+  color: rgb(61, 42, 233);
+}
+#vide {
+  color: rgb(140, 140, 216);
+}
+#doublesolution {
+  color: rgb(58, 25, 119);
+}
+#calcul {
+  background-color: rgb(198, 208, 212);
+  border: 2px solid rgb(104, 85, 85);
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px 10px 20px 20px;
+}
+body {
+  background-color: rgb(196, 196, 238);
+}
+#deuxracine {
+  color: rgb(106, 157, 216);
+}
+#solution {
+  color : rgb(53, 129, 228);
+}
+#indicea {
+  color: rgb(199, 116, 116);
+  animation-name: indice;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+@keyframes indice {
+  from {
+    color: rgb(92, 92, 201)
+  }
+  
+  to {
+    color: rgb(88, 30, 49);
+  }
+}
