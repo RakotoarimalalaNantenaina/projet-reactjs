@@ -66,8 +66,9 @@ h6 {
 #boutton {
   width: 325px;
 }
-#boutton :hover {
+#boutton:hover {
   font-weight: bolder;
+  font-size: 20px;
 }
 #icone {
   width: 20px;
@@ -141,7 +142,7 @@ h1 {
   padding: 10px 10px 20px 20px;
 }
 body {
-  background-color: rgb(196, 196, 238);
+  background-image: radial-gradient(circle at center, white, rgb(0, 128, 122));
 }
 #deuxracine {
   color: rgb(106, 157, 216);
@@ -151,16 +152,30 @@ body {
 }
 #indicea {
   color: rgb(199, 116, 116);
-  animation-name: indice;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
+  animation: rotation 6s infinite linear;
 }
-@keyframes indice {
+
+@keyframes rotation {
   from {
-    color: rgb(92, 92, 201)
+    color: rgb(92, 92, 201);
   }
   
   to {
     color: rgb(88, 30, 49);
   }
+}
+#delta {
+  color: rgb(38, 109, 105) ;
+  
+}
+#racinedelta {
+  color: rgb(38, 109, 105) ;
+  
+}
+#spandelta {
+  font-weight: bold;
+  color: rgb(38, 108, 173)
+}
+#titre {
+  font-size: 18px;
 }

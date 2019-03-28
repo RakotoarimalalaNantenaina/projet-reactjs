@@ -17,15 +17,20 @@ const Calcul = props => {
     var x1 = document.getElementById('x1')
     var x2 = document.getElementById('x2')
     var positif = document.getElementById('solutionpositif')
+    var affichedelta =  document.getElementById('delta')
+    var afficheracinedelta = document.getElementById('racinedelta')
 
 
-    var entiera = parseInt(user.a)
-    var entierb = parseInt(user.b)
-    var entierc = parseInt(user.c)
+    var entiera = parseInt(user.a)//l'indice a
+    var entierb = parseInt(user.b)//l'indice b  
+    var entierc = parseInt(user.c)//l'indice c
 
     if(entiera===0){
       x1.innerHTML = ""
       x2.innerHTML = ""
+      affichedelta.innerHTML = "" 
+      afficheracinedelta.innerHTML = "" 
+      positif.innerHTML =""                                                             
       inseredelta.innerHTML = "<span id='premierdegree'>L'équation devient une équation du premier degrée</span><br>"+
                               "<span id='entierb'>"+entierb+"</span> x + <span id='entierc'>" + entierc +"</span> = 0"
     }
@@ -41,12 +46,17 @@ const Calcul = props => {
       x1.innerHTML = ""
       x2.innerHTML = "" 
       positif.innerHTML ="" 
+      affichedelta.innerHTML = "" 
+      afficheracinedelta.innerHTML = "" 
     }
     else if(delta===0){
        x1.innerHTML = ""
        x2.innerHTML = ""
-       positif.innerHTML ="" 
+       positif.innerHTML =""
+       affichedelta.innerHTML = "" 
+       afficheracinedelta.innerHTML = "" 
       var doublesolution = - entierb / (2 * entiera) 
+      affichedelta.innerHTML = "Δ = "+delta + "<br>"
       inseredelta.innerHTML =  "<span id=\"doublesolution\">Une Solution Unique<br> x<sub>1</sub>  = "+doublesolution+"<br> S = { " + doublesolution + " }</span>"
     }
     else{
@@ -61,6 +71,9 @@ const Calcul = props => {
         x1.innerHTML = ""
         x2.innerHTML = ""
         positif.innerHTML =""
+        affichedelta.innerHTML = "" 
+        afficheracinedelta.innerHTML = ""
+
       if(zonetext1.value === ""){
         var vide = document.getElementById('a')
         vide.innerHTML = ""
@@ -77,9 +90,14 @@ const Calcul = props => {
       }
 
       else{
+      
       var racinedelta = Math.sqrt(delta) // calcul racinedelta
       var xprime = (-(entierb) + racinedelta) / (2 * entiera)
       var xsecond = (-(entierb) - racinedelta) / (2 * entiera)
+
+
+      affichedelta.innerHTML = "Δ = <span id='spandelta'>"+delta + "</span><br>"
+      afficheracinedelta.innerHTML = "√Δ = <span id='spandelta'>"+racinedelta + "</span><br>"
       inseredelta.innerHTML = "<span id=\"deuxracine\">Deux racines  distincts x<sub>1</sub>,x<sub>2</sub><br></span>"
       x1.innerHTML = "x<sub>1</sub> = " + xprime
       x2.innerHTML = "x<sub>2</sub> = " + xsecond + "<br>"
@@ -111,6 +129,7 @@ const Calcul = props => {
           x1.innerHTML = ""
           x2.innerHTML =""
           positif.innerHTML = ""
+          
         }
         else if(isNaN(user.b)){
           erreur1.innerHTML = 'Entrer un nombre'
@@ -162,6 +181,8 @@ const Calcul = props => {
             </tbody>
             </table>
             <button id="boutton" onClick={() => {delta()}} className="btn btn-primary btn-lg">Calculer</button><br/><br/>
+            <h4 id="delta"></h4>
+            <h4 id="racinedelta"></h4>
             <h4 id="a"></h4>
             <h6 id="x1"></h6>
             <h6 id="x2"></h6>
@@ -172,4 +193,3 @@ const Calcul = props => {
 	)
 }	
 export default Calcul;
-

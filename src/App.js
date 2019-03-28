@@ -19,7 +19,8 @@ const App = () => {
     <div className="container">
     <h1>
       <center>EQUATION DU SECOND DEGREE<br/>
-        <span id="indice">a</span><span id="spanx">x</span><sup>2</sup><span id="spanx"> + </span><span id="indice">b</span><span id="spanx">x + </span><span id="indice">c</span><span id="spanx"> = 0</span>
+        <span id="indice">a</span><span id="spanx">x</span><sup>2</sup><span id="spanx"> + </span><span id="indice">b</span><span id="spanx">x + </span><span id="indice">c</span><span id="spanx"> = 0</span><br/>
+        <span id="titre">Entrer les indices a , b et c pour voir la solution de l'equation.</span>
       </center>
     </h1>
     <div className="row">
