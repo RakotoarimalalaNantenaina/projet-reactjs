@@ -179,3 +179,12 @@ body {
 #titre {
   font-size: 18px;
 }
+footer {
+  color:  rgb(76, 116, 110);
+  margin-top: 80px;
+}
+#gmail {
+  color: rgb(28, 131, 156);
+  font-size: 20px;
+  text-decoration: none;
+}
