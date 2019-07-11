@@ -162,25 +162,25 @@ const Calcul = props => {
             <tbody>
               <tr>
                 <td><label id="nom"><span id="indicea">Indice a</span> &nbsp;&nbsp;</label></td>
-                <td><input id="zonetext1" type="text" name="a" value={user.a} onChange={handleInputChange} />
+                <td><input id="zonetext1" type="text" name="a" value={user.a} onChange={handleInputChange} required/>
                 <p id="erreur"></p>
                 </td>
               </tr>
               <tr>
                 <td><label id="nom"><span id="indicea">Indice b</span> </label></td>
-                <td><input id="zonetext2"type="text" name="b" value={user.b} onChange={handleInputChange} />
+                <td><input id="zonetext2"type="text" name="b" value={user.b} onChange={handleInputChange} required/>
                 <p id="erreur1"></p>
                 </td>
               </tr>
               <tr>
                 <td><label id="nom"><span id="indicea">indice c</span> </label></td>
-                <td><input type="text" id="zonetext3"  name="c" value={user.c} onChange={handleInputChange} />
+                <td><input type="text" id="zonetext3"  name="c" value={user.c} onChange={handleInputChange} required/>
                 <p id="erreur2"></p>
                 </td>
               </tr>
             </tbody>
             </table>
-            <button id="boutton" onClick={() => {delta()}} className="btn btn-primary btn-lg">Calculer</button><br/><br/>
+            <button id="boutton" type="submit" onClick={() => {delta()}} className="btn btn-primary btn-lg">Calculer</button><br/><br/>
             <h4 id="delta"></h4>
             <h4 id="racinedelta"></h4>
             <h4 id="a"></h4>
