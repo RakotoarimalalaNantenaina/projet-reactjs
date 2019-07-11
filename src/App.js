@@ -42,8 +42,8 @@ const App = () => {
       </div>
       <center>
         <footer>
-          <SocialIcon url="https://mail.google.com/" />  <a href="#" id="gmail">naynah344@gmail.com</a><br />
-          &nbsp;&nbsp;&nbsp; <SocialIcon url="https://facebook.com/" />  <a href="https://www.facebook.com/feno.tanteliniaina" id="gmail">Nantenaina Rakotoarimalala</a><br /><br/>
+          <SocialIcon url="https://mail.google.com/" />  <a href="!#" id="gmail">naynah344@gmail.com</a><br />
+          &nbsp;&nbsp;&nbsp; <SocialIcon url="https://facebook.com/" />  <a href="https://www.facebook.com/feno.tanteliniaina" id="gmail" target="_blank">Nantenaina Rakotoarimalala</a><br /><br/>
           Copyright@nantenaina 2019
           </footer>
       </center>
