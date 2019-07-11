@@ -43,7 +43,7 @@ const App = () => {
       <center>
         <footer>
           <SocialIcon url="https://mail.google.com/" />  <a href="#" id="gmail">naynah344@gmail.com</a><br />
-          &nbsp;&nbsp;&nbsp; <SocialIcon url="https://facebook.com/" />  <a href="#" id="gmail">Nantenaina Rakotoarimalala</a><br /><br/>
+          &nbsp;&nbsp;&nbsp; <SocialIcon url="https://facebook.com/" />  <a href="https://www.facebook.com/feno.tanteliniaina" id="gmail">Nantenaina Rakotoarimalala</a><br /><br/>
           Copyright@nantenaina 2019
           </footer>
       </center>
